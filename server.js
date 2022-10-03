@@ -59,6 +59,6 @@ app.get('/api/:chakraName', (request, response)=>{
     }
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`The server is running on ${PORT}! You better go catch it!`)
 })
