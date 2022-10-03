@@ -42,11 +42,11 @@ const chakras = {
     'focus': 'Focuses on our ability to be connect spiritually',
     'location': 'Located at the top of the head',
 },
-'err chakra':{
-    'aka': 'Err',
-    'focus': 'Err',
-    'location': 'Err',
-}
+'unknown':{
+    'aka': 'unknown',
+    'focus': 'unknown',
+    'location': 'unknown',
+},
 }
 
 app.get('/', (request, response)=>{
@@ -58,7 +58,7 @@ app.get('/api/:chakraName', (request, response)=>{
     if(chakras[chakrasName]){
         response.json(chakras[chakrasName])
     }else{
-        response.json(chakras['Err Chakra'])
+        response.json(chakras['unknown'])
     }
 })
 
