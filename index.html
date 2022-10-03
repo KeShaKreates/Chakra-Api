@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="materialize.css"  media="screen,projection"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;400;700;800;900&display=swap" rel="stylesheet">
     <title>Chakras Api</title>
 </head>
-<body>
+<body class=" green lighten-4">
+ <div class="container center-align">
     <h1>Chakras Api</h1>
-    <h2> Enter the name of any of the 7 chakras below:</h2>
+    <h2> Welcome, learn more about the major energy points in our bodies that we call chakras. </h2>
+    <h4> Enter any of the 7 chakras below:</h4>
+   
+    <input class=" blue-grey-text" type="text" placeholder="Ex: heart chakra">
+    <button class="waves-effect waves-light green lighten-5 btn blue-grey-text">Submit</button>
 
-    <button>Click Me</button>
-    <input type="text" placeholder="Ex: heart chakra">
+    <div class="card-panel green lighten-5">
+        <h2>Chakra Name: </h2>
+        <span> </span>
 
-    <h2>Chakra Name: </h2>
-    <span> </span>
+        <h2>Chakra Focus: </h2>
+        <p> </p>
 
-    <h2>Chakra Focus: </h2>
-    <p> </p>
-
-    <h2>Chakra Location: </h2>
-    <h3> </h3>
+        <h2>Chakra Location: </h2>
+        <h3> </h3>
+    </div>
+</div>
 
     <script src="main.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
 </body>
 </html>

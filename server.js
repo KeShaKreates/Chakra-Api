@@ -5,6 +5,7 @@ const PORT = 4000
 
 app.use(cors())
 app.use(express.static('js'))
+app.use(express.static('css'))
 
 const chakras = {
    'root chakra':{
