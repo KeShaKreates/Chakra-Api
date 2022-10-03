@@ -53,10 +53,10 @@ app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:chakraName', (request, response)=>{
-    const chakrasName = request.params.chakraName.toLowerCase()
-    if(chakras[chakrasName]){
-        response.json(chakras[chakrasName])
+app.get('/api/:name', (request, response)=>{
+    const chakraName = request.params.name.toLowerCase()
+    if(chakras[chakraName]){
+        response.json(chakras[chakraName])
     }else{
         response.json(chakras['unknown'])
     }
