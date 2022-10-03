@@ -7,7 +7,13 @@ async function apiRequest(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = data.aka
+        document.querySelector('span').innerText = data.aka
+
+        console.log(data)
+        document.querySelector('p').innerText = data.focus
+
+        console.log(data)
+        document.querySelector('h3').innerText = data.location
     }catch(error){
         console.log(error)
     }
