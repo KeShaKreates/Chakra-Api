@@ -1,9 +1,9 @@
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
-    const chakraName = document.querySelector('input').value
+    const name = document.querySelector('input').value
     try{
-        const response = await fetch(`api/${chakraName}`)
+        const response = await fetch(`https://chakras-api.herokuapp.com/api/${name}`)
         const data = await response.json()
 
         console.log(data)
